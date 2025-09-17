@@ -18,23 +18,23 @@ header ul {
   display: flex;
   position: fixed;
   top: 10px;
-  left:10px;
+  left: 10px;
   width: 40%;
   justify-content: space-between;
   height: 40px;
   line-height: 40px;
   text-align: center;
   z-index: 10;
-  font-size:28px;
+  font-size: 28px;
 }
 header li {
   width: calc(100% / 4);
-  border-radius:20px;
+  border-radius: 20px;
 }
 header li:hover {
-  background-color: #222;
+  background-color: #045553;
   color: #fff;
-  font-weight:500;
+  font-weight: 500;
 }
 header a {
   display: block;
@@ -80,17 +80,17 @@ section.page2 li {
 .active {
   margin-top: 0px !important;
   opacity: 1 !important;
-  filter: brightness(0.6)
+  filter: brightness(0.6);
 }
-section.page2 li:hover{
+section.page2 li:hover {
   filter: brightness(1);
-  height:210px;
+  height: 210px;
 }
 section.page2 img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius:10px;
+  border-radius: 10px;
 }
 
 /*section page3*/
@@ -157,13 +157,13 @@ section.page4 h2 {
   height: 15px;
   background-color: #fff;
   position: relative;
-  opacity:0.4;
+  opacity: 0.4;
 }
-#navi li:first-child{
-  border-radius:10px 10px 0px 0px;
+#navi li:first-child {
+  border-radius: 10px 10px 0px 0px;
 }
-#navi li:last-child{
-  border-radius:0px 0px 10px 10px;
+#navi li:last-child {
+  border-radius: 0px 0px 10px 10px;
 }
 #navi span {
   font-size: 11px;
@@ -175,7 +175,7 @@ section.page4 h2 {
 
 #navi .on {
   background-color: rgb(61, 61, 61);
-  opacity:1;
+  opacity: 1;
 }
 #navi .on span {
   display: block;
