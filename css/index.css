@@ -1,0 +1,182 @@
+/*reset*/
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Noto Sans KR", sans-serif;
+}
+ul {
+  list-style: none;
+}
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/*여기부터*/
+/*header*/
+header ul {
+  display: flex;
+  position: fixed;
+  top: 10px;
+  left:10px;
+  width: 40%;
+  justify-content: space-between;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  z-index: 10;
+  font-size:28px;
+}
+header li {
+  width: calc(100% / 4);
+  border-radius:20px;
+}
+header li:hover {
+  background-color: #222;
+  color: #fff;
+  font-weight:500;
+}
+header a {
+  display: block;
+}
+
+/*container*/
+#container {
+  width: 100%;
+  height: 100vh;
+  /* position: fixed; */
+}
+section {
+  width: 100%;
+  height: 100%;
+}
+/*section page1*/
+section.page1 h2 {
+  font-size: 100px;
+  padding-top: 300px;
+  transition: 1s;
+  opacity: 0;
+}
+.activepage1 {
+  padding: 0px !important;
+  opacity: 1 !important;
+  rotate: -5deg;
+}
+/*section page2*/
+section.page2 ul/*.page2 앞에 띄어쓰기가 없으면, section중에 page2클래스가 붙은 section이 된다.*/ {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  height: 100%;
+}
+section.page2 li {
+  width: 200px;
+  height: 200px;
+  opacity: 0;
+  margin-top: 300px;
+  transition: 1s;
+}
+.active {
+  margin-top: 0px !important;
+  opacity: 1 !important;
+  filter: brightness(0.6)
+}
+section.page2 li:hover{
+  filter: brightness(1);
+  height:210px;
+}
+section.page2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius:10px;
+}
+
+/*section page3*/
+
+section.page3 div {
+  width: 100%;
+  height: 50%;
+  padding-top: 50%;
+  transition: 1s;
+  opacity: 0;
+}
+.activepage3 {
+  padding-top: 20% !important;
+  opacity: 1 !important;
+}
+section.page3 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/*section page4*/
+section.page4 h2 {
+  font-size: 20px;
+  transition: 0.5s;
+}
+.activepage4 {
+  font-size: 60px !important;
+}
+
+#container h2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#container .page1 {
+  background-color: #f2f4d3;
+}
+#container .page2 {
+  background-color: #d3edf4;
+}
+#container .page3 {
+  background-color: #e8d3f4;
+}
+#container .page4 {
+  background-color: #f4ded3;
+}
+
+/*navi*/
+#navi {
+  position: fixed;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+}
+
+#navi li {
+  width: 5px;
+  height: 15px;
+  background-color: #fff;
+  position: relative;
+  opacity:0.4;
+}
+#navi li:first-child{
+  border-radius:10px 10px 0px 0px;
+}
+#navi li:last-child{
+  border-radius:0px 0px 10px 10px;
+}
+#navi span {
+  font-size: 11px;
+  line-height: 100%;
+  position: absolute;
+  right: 15px;
+  display: none;
+}
+
+#navi .on {
+  background-color: rgb(61, 61, 61);
+  opacity:1;
+}
+#navi .on span {
+  display: block;
+}
