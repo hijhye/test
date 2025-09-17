@@ -40,7 +40,7 @@ $(function () {
       $("section.page1 h2").removeClass("activepage1");
     }
 
-    if (sc >= page2 - 150 && sc <= page3 - 150 ) {
+    if (sc >= page2 - 150 && sc <= page3 - 150) {
       $("#navi li").removeClass("on");
       $("#navi li:nth-child(2)").addClass("on");
       $("section.page2 li").addClass("active");
@@ -48,7 +48,7 @@ $(function () {
       $("section.page2 li").removeClass("active");
     }
 
-    if (sc >= page3 - 150 && sc <= page4 - 150 ) {
+    if (sc >= page3 - 150 && sc <= page4) {
       $("#navi li").removeClass("on");
       $("#navi li:nth-child(3)").addClass("on");
       $("section.page3 div").addClass("activepage3");
